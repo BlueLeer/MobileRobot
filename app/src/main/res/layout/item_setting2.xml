@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_id"
+            android:text=""
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/desp_id"
+            android:textSize="20dp"
+            android:text=""
+            android:layout_below="@id/title_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--设置它们的目的是:当点击到Check上面的时候,产生了一个事件,
+        但是此事件被checkbox处理掉了,此时就不能回传给它的父控件
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_select_id"
+            android:src="@drawable/jiantou1_pressed"
+            android:padding="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/desp_id"
+            android:background="#000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

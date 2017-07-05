@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView style="@style/TitleStyle"
+        android:text="添加拦截联系人"/>
+    <EditText
+        android:id="@+id/dialog_et_phone_number"
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:hint="请输入联系人电话号码"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/rg_phone_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <RadioButton
+            android:id="@+id/rb_sms"
+            android:layout_height="wrap_content"
+            android:text="短信"
+            android:shadowColor="#000"
+            android:textColor="#000"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/rb_phone"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="#000"
+            android:shadowColor="#000"
+            android:text="电话"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="#000"
+            android:shadowColor="#000"
+            android:text="所有"
+            android:layout_weight="1"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="确定"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

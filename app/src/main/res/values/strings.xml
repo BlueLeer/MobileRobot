@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">手机安全卫士</string>
+    <string name="sample_device_admin">我的设备管理器</string>
+    <string name="device_admin_description">远程锁屏,设置密码</string>
+</resources>

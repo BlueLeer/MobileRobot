@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--进度为0的时候的进度条的背景图片-->
+    <item android:id="@android:id/background"
+        android:drawable="@drawable/security_progress_bg"/>
+
+    <!--经度为0%至100%之间的已加载的背景图片-->
+    <item android:id="@android:id/secondaryProgress"
+        android:drawable="@drawable/security_progress"/>
+
+    <!--进度为100%的时候的背景图片-->
+    <item android:id="@android:id/progress"
+        android:drawable="@drawable/security_progress"/>
+</layer-list>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.study.leer.mobilerobot.activity.HomeActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TitleStyle"
+        android:text="功能列表"/>
+
+    <!--要嵌入广告的布局-->
+    <LinearLayout
+        android:id="@+id/ll_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+    </LinearLayout>
+
+    <android.study.leer.mobilerobot.widget.MarqueeTextView
+        android:id="@+id/marquee_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="最大的幽默是从你极度受伤的心灵深处发出的微笑~~~~~~~~~~" />
+
+    <GridView
+        android:id="@+id/item_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="25dp"
+        android:numColumns="3">
+    </GridView>
+</LinearLayout>

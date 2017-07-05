@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#d21515</color>
+
+    <color name="splash_activity_bg">#b9b9b9</color>
+    <color name="splash_activity_tv_shadow">#ffe95b</color>
+    <color name="title_color">#000</color>
+    <color name="transparent_bg">#9000</color>
+    <color name="green">#5aeb36</color>
+    <color name="transparent">#8f000000</color>
+</resources>
